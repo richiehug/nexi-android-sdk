@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>NexiSdkOptions</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../../../index.html" tabindex="1">
+                    Nexi Android SDK
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+1.0.0        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":sdk/main">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":sdk/main"
+                                       data-filter=":sdk/main"/>
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Nexi Android SDK
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Nexi Android SDK::io.github.richiehug.nexi.android.sdk.model/NexiSdkOptions///PointingToDeclaration//-1715042111">
+  <div class="breadcrumbs"><a href="../../../index.html">Nexi Android SDK</a><span class="delimiter">/</span><a href="../index.html">io.github.richiehug.nexi.android.sdk.model</a><span class="delimiter">/</span><span class="current">NexiSdkOptions</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Nexi</span><wbr></wbr><span>Sdk</span><wbr></wbr><span><span>Options</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">NexiSdkOptions</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>connectTimeoutMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operationTimeoutMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>returnToCallingApp<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>language<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;en&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>forceAcceptance<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>receiptHandling<span class="token operator">: </span><a href="../-receipt-handling/index.html">ReceiptHandling</a><span class="token operator"> = </span>ReceiptHandling()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>transactionOverlay<span class="token operator">: </span><a href="../-transaction-overlay-options/index.html">TransactionOverlayOptions</a><span class="token operator"> = </span>TransactionOverlayOptions()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>abortRetryDelayMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>maxAbortAttempts<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">3</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>abortRecoveryDelayMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">350</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>abortRecoveryAttempts<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">3</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>reprintAfterAbort<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>receiptRecoveryDelayMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>connectivityLossGracePeriodMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>resultRecoveryDelaysMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">&gt;</span><span class="token operator"> = </span>listOf(1_000L, 2_500L, 5_000L, 10_000L, 20_000L)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>returnToAppRetryDelaysMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">&gt;</span><span class="token operator"> = </span>listOf(1_500L, 3_500L, 6_500L, 12_000L, 20_000L, 30_000L, 45_000L)<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>operationEventListener<span class="token operator">: </span><a href="../-nexi-operation-event-listener/index.html">NexiOperationEventListener</a><span class="token operator"> = </span>NexiOperationEventListener.NONE<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>loggingEnabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>maxLogStorageBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span>20L * 1024L * 1024L<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>logger<span class="token operator">: </span><a href="../-nexi-logger/index.html">NexiLogger</a><span class="token operator"> = </span>NexiLogger.NONE<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>terminalHost<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>allowLoopbackCallbackProxy<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>requestFullPan<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><p class="paragraph">Configures terminal communication, UI, recovery, receipts, lifecycle behavior, and logging.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="-132830252%2FConstructors%2F-1715042111" anchor-label="NexiSdkOptions" id="-132830252%2FConstructors%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-nexi-sdk-options.html"><span>Nexi</span><wbr></wbr><span>Sdk</span><wbr></wbr><span><span>Options</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-132830252%2FConstructors%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">connectTimeoutMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">operationTimeoutMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">returnToCallingApp<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">language<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;en&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">forceAcceptance<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">receiptHandling<span class="token operator">: </span><a href="../-receipt-handling/index.html">ReceiptHandling</a><span class="token operator"> = </span>ReceiptHandling()<span class="token punctuation">, </span></span><span class="parameter ">transactionOverlay<span class="token operator">: </span><a href="../-transaction-overlay-options/index.html">TransactionOverlayOptions</a><span class="token operator"> = </span>TransactionOverlayOptions()<span class="token punctuation">, </span></span><span class="parameter ">abortRetryDelayMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">maxAbortAttempts<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">3</span><span class="token punctuation">, </span></span><span class="parameter ">abortRecoveryDelayMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span><span class="token constant">350</span><span class="token punctuation">, </span></span><span class="parameter ">abortRecoveryAttempts<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">3</span><span class="token punctuation">, </span></span><span class="parameter ">reprintAfterAbort<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter ">receiptRecoveryDelayMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">connectivityLossGracePeriodMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter ">resultRecoveryDelaysMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">&gt;</span><span class="token operator"> = </span>listOf(1_000L, 2_500L, 5_000L, 10_000L, 20_000L)<span class="token punctuation">, </span></span><span class="parameter ">returnToAppRetryDelaysMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">&gt;</span><span class="token operator"> = </span>listOf(1_500L, 3_500L, 6_500L, 12_000L, 20_000L, 30_000L, 45_000L)<span class="token punctuation">, </span></span><span class="parameter ">operationEventListener<span class="token operator">: </span><a href="../-nexi-operation-event-listener/index.html">NexiOperationEventListener</a><span class="token operator"> = </span>NexiOperationEventListener.NONE<span class="token punctuation">, </span></span><span class="parameter ">loggingEnabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">maxLogStorageBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span>20L * 1024L * 1024L<span class="token punctuation">, </span></span><span class="parameter ">logger<span class="token operator">: </span><a href="../-nexi-logger/index.html">NexiLogger</a><span class="token operator"> = </span>NexiLogger.NONE<span class="token punctuation">, </span></span><span class="parameter ">terminalHost<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;127.0.0.1&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">allowLoopbackCallbackProxy<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">requestFullPan<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="2135585669%2FProperties%2F-1715042111" anchor-label="abortRecoveryAttempts" id="2135585669%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="abort-recovery-attempts.html"><span>abort</span><wbr></wbr><span>Recovery</span><wbr></wbr><span><span>Attempts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2135585669%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="abort-recovery-attempts.html">abortRecoveryAttempts</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">number of terminal-readiness checks after an abort; from 1 through 10.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="405474086%2FProperties%2F-1715042111" anchor-label="abortRecoveryDelayMillis" id="405474086%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="abort-recovery-delay-millis.html"><span>abort</span><wbr></wbr><span>Recovery</span><wbr></wbr><span>Delay</span><wbr></wbr><span><span>Millis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="405474086%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="abort-recovery-delay-millis.html">abortRecoveryDelayMillis</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">base delay between terminal-readiness checks after an abort.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1147508129%2FProperties%2F-1715042111" anchor-label="abortRetryDelayMillis" id="-1147508129%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="abort-retry-delay-millis.html"><span>abort</span><wbr></wbr><span>Retry</span><wbr></wbr><span>Delay</span><wbr></wbr><span><span>Millis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1147508129%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="abort-retry-delay-millis.html">abortRetryDelayMillis</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">minimum delay before another abort request for the active transaction.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-129062667%2FProperties%2F-1715042111" anchor-label="allowLoopbackCallbackProxy" id="-129062667%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allow-loopback-callback-proxy.html"><span>allow</span><wbr></wbr><span>Loopback</span><wbr></wbr><span>Callback</span><wbr></wbr><span><span>Proxy</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-129062667%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="allow-loopback-callback-proxy.html">allowLoopbackCallbackProxy</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">whether loopback callback peers are accepted for an external terminal.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="342365355%2FProperties%2F-1715042111" anchor-label="connectivityLossGracePeriodMillis" id="342365355%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="connectivity-loss-grace-period-millis.html"><span>connectivity</span><wbr></wbr><span>Loss</span><wbr></wbr><span>Grace</span><wbr></wbr><span>Period</span><wbr></wbr><span><span>Millis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="342365355%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="connectivity-loss-grace-period-millis.html">connectivityLossGracePeriodMillis</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">continuous network loss after which a sent request becomes uncertain.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2031461133%2FProperties%2F-1715042111" anchor-label="connectTimeoutMillis" id="2031461133%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="connect-timeout-millis.html"><span>connect</span><wbr></wbr><span>Timeout</span><wbr></wbr><span><span>Millis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2031461133%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="connect-timeout-millis.html">connectTimeoutMillis</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">TCP connection timeout; must be greater than zero.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-415034546%2FProperties%2F-1715042111" anchor-label="forceAcceptance" id="-415034546%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="force-acceptance.html"><span>force</span><wbr></wbr><span><span>Acceptance</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-415034546%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="force-acceptance.html">forceAcceptance</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">whether payment requests ask the terminal for Force Acceptance.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-875054638%2FProperties%2F-1715042111" anchor-label="language" id="-875054638%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="language.html"><span><span>language</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-875054638%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="language.html">language</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">overlay and terminal language: <code class="lang-kotlin">en</code>, <code class="lang-kotlin">de</code>, <code class="lang-kotlin">fr</code>, or <code class="lang-kotlin">it</code>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-231506470%2FProperties%2F-1715042111" anchor-label="logger" id="-231506470%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="logger.html"><span><span>logger</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-231506470%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="logger.html">logger</a><span class="token operator">: </span><a href="../-nexi-logger/index.html">NexiLogger</a></div><div class="brief "><p class="paragraph">additional logger that receives SDK diagnostic messages when logging is enabled.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1933809608%2FProperties%2F-1715042111" anchor-label="loggingEnabled" id="1933809608%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="logging-enabled.html"><span>logging</span><wbr></wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1933809608%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="logging-enabled.html">loggingEnabled</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">whether redacted SDK file logging is enabled.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-660334120%2FProperties%2F-1715042111" anchor-label="maxAbortAttempts" id="-660334120%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-abort-attempts.html"><span>max</span><wbr></wbr><span>Abort</span><wbr></wbr><span><span>Attempts</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-660334120%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="max-abort-attempts.html">maxAbortAttempts</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">maximum abort requests sent for one active transaction; from 1 through 10.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="59586010%2FProperties%2F-1715042111" anchor-label="maxLogStorageBytes" id="59586010%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-log-storage-bytes.html"><span>max</span><wbr></wbr><span>Log</span><wbr></wbr><span>Storage</span><wbr></wbr><span><span>Bytes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="59586010%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="max-log-storage-bytes.html">maxLogStorageBytes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">maximum retained SDK log storage; must be greater than zero.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1660783107%2FProperties%2F-1715042111" anchor-label="operationEventListener" id="1660783107%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="operation-event-listener.html"><span>operation</span><wbr></wbr><span>Event</span><wbr></wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1660783107%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="operation-event-listener.html">operationEventListener</a><span class="token operator">: </span><a href="../-nexi-operation-event-listener/index.html">NexiOperationEventListener</a></div><div class="brief "><p class="paragraph">observer for operation, receipt, DCC, recovery, and lifecycle events.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-262360438%2FProperties%2F-1715042111" anchor-label="operationTimeoutMillis" id="-262360438%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="operation-timeout-millis.html"><span>operation</span><wbr></wbr><span>Timeout</span><wbr></wbr><span><span>Millis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-262360438%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="operation-timeout-millis.html">operationTimeoutMillis</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">maximum duration of one OPI operation; must be greater than zero.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1231501331%2FProperties%2F-1715042111" anchor-label="receiptHandling" id="1231501331%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="receipt-handling.html"><span>receipt</span><wbr></wbr><span><span>Handling</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1231501331%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="receipt-handling.html">receiptHandling</a><span class="token operator">: </span><a href="../-receipt-handling/index.html">ReceiptHandling</a></div><div class="brief "><p class="paragraph">handling of final merchant and customer receipts.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="320243438%2FProperties%2F-1715042111" anchor-label="receiptRecoveryDelayMillis" id="320243438%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="receipt-recovery-delay-millis.html"><span>receipt</span><wbr></wbr><span>Recovery</span><wbr></wbr><span>Delay</span><wbr></wbr><span><span>Millis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="320243438%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="receipt-recovery-delay-millis.html">receiptRecoveryDelayMillis</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">delay between readiness checks after pending-receipt recovery.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1356620034%2FProperties%2F-1715042111" anchor-label="reprintAfterAbort" id="1356620034%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="reprint-after-abort.html"><span>reprint</span><wbr></wbr><span>After</span><wbr></wbr><span><span>Abort</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1356620034%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="reprint-after-abort.html">reprintAfterAbort</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">whether the SDK may clear a pending receipt after an acknowledged abort.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="196555595%2FProperties%2F-1715042111" anchor-label="requestFullPan" id="196555595%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="request-full-pan.html"><span>request</span><wbr></wbr><span>Full</span><wbr></wbr><span><span>Pan</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="196555595%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="request-full-pan.html">requestFullPan</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">whether OPI card requests explicitly request the full PAN. <code class="lang-kotlin">null</code> omits <code class="lang-kotlin">RequestFullPAN</code>; use <code class="lang-kotlin">true</code> or <code class="lang-kotlin">false</code> only when the terminal integration requires an explicit value. The SDK never exposes an unmasked PAN in its public result models.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="232193090%2FProperties%2F-1715042111" anchor-label="resultRecoveryDelaysMillis" id="232193090%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="result-recovery-delays-millis.html"><span>result</span><wbr></wbr><span>Recovery</span><wbr></wbr><span>Delays</span><wbr></wbr><span><span>Millis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="232193090%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="result-recovery-delays-millis.html">resultRecoveryDelaysMillis</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">strictly increasing delays for OPI RepeatLastMessage recovery attempts.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="685182434%2FProperties%2F-1715042111" anchor-label="returnToAppRetryDelaysMillis" id="685182434%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="return-to-app-retry-delays-millis.html"><span>return</span><wbr></wbr><span>To</span><wbr></wbr><span>App</span><wbr></wbr><span>Retry</span><wbr></wbr><span>Delays</span><wbr></wbr><span><span>Millis</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="685182434%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="return-to-app-retry-delays-millis.html">returnToAppRetryDelaysMillis</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">strictly increasing delays for foreground-return attempts.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2059652606%2FProperties%2F-1715042111" anchor-label="returnToCallingApp" id="-2059652606%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="return-to-calling-app.html"><span>return</span><wbr></wbr><span>To</span><wbr></wbr><span>Calling</span><wbr></wbr><span><span>App</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2059652606%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="return-to-calling-app.html">returnToCallingApp</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">whether the SDK should restore the merchant task after an operation.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1510288922%2FProperties%2F-1715042111" anchor-label="terminalHost" id="-1510288922%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="terminal-host.html"><span>terminal</span><wbr></wbr><span><span>Host</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1510288922%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="terminal-host.html">terminalHost</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">payment-terminal host or IP address; defaults to loopback for on-terminal use.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1147079320%2FProperties%2F-1715042111" anchor-label="transactionOverlay" id="1147079320%2FProperties%2F-1715042111" data-filterable-set=":sdk/main"></a>
+          <div class="table-row table-row_content" data-filterable-current=":sdk/main" data-filterable-set=":sdk/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="transaction-overlay.html"><span>transaction</span><wbr></wbr><span><span>Overlay</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1147079320%2FProperties%2F-1715042111"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sdk/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="transaction-overlay.html">transactionOverlay</a><span class="token operator">: </span><a href="../-transaction-overlay-options/index.html">TransactionOverlayOptions</a></div><div class="brief "><p class="paragraph">SDK-owned transaction overlay configuration.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

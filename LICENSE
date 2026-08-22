@@ -1,0 +1,65 @@
+Nexi Android SDK License
+
+Copyright © 2026 Nexi Switzerland AG. All rights reserved.
+
+This license governs use of the Nexi Android SDK (the "SDK"). By downloading,
+accessing, or using the SDK, you agree to these terms.
+
+1. Permitted use
+
+Nexi Switzerland AG grants you a limited, non-exclusive, non-transferable,
+and non-sublicensable license to use the SDK solely to develop, test, and
+operate point-of-sale (POS) or electronic cash register (ECR) applications
+that integrate with Nexi payment services.
+
+You may reproduce and bundle the unmodified SDK as an embedded component of
+those applications, including commercial applications, and distribute those
+applications to your customers and end users. The SDK must not be made
+available separately from the application in which it is embedded.
+
+2. Restrictions
+
+Except for the permitted use above, you may not:
+
+- distribute, sell, resell, rent, lease, republish, or otherwise make the SDK
+  available on a standalone basis;
+- sublicense the SDK or any rights in it;
+- repackage, rebrand, or otherwise present the SDK as a separate or competing
+  product;
+- remove, alter, or obscure any proprietary notice contained in or supplied
+  with the SDK; or
+- reverse engineer, decompile, or disassemble the SDK, except to the limited
+  extent that applicable law expressly permits despite this restriction.
+
+3. Ownership
+
+The SDK is licensed, not sold. Nexi Switzerland AG and its licensors retain
+all right, title, and interest in and to the SDK, including all intellectual
+property rights. No rights are granted except those expressly stated in this
+license.
+
+4. Third-party software
+
+Third-party software used with or by the SDK remains subject to its applicable
+third-party license terms.
+
+5. Disclaimer
+
+THE SDK IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY
+KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND
+NON-INFRINGEMENT, TO THE MAXIMUM EXTENT PERMITTED BY LAW.
+
+6. Limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, NEXI SWITZERLAND AG AND ITS LICENSORS
+WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR
+PUNITIVE DAMAGES, OR FOR ANY LOSS OF PROFITS, REVENUE, DATA, OR BUSINESS,
+ARISING OUT OF OR RELATED TO THE SDK OR THIS LICENSE.
+
+7. Termination
+
+This license terminates automatically if you breach its terms. Upon
+termination, you must stop using and distributing the SDK, except that
+applications lawfully distributed before termination may remain in use by
+their existing end users.
